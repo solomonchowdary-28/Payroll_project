@@ -1,0 +1,23 @@
+<div xmlns:th="http://www.thymeleaf.org" th:fragment="footer">
+  <footer class="bg-dark text-white py-3 mt-4">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+      
+
+      <!-- Excel download form -->
+      <form id="downloadForm"
+      class="d-flex align-items-center"
+      th:action="@{/downloads/excel}"
+      method="get"
+      onsubmit="return validateDateRange()">
+  
+  <label class="me-2 text-white-50 mb-0">Start:</label>
+  <input id="startDate" name="start" type="date" class="form-control form-control-sm me-2" required>
+
+  <label class="me-2 text-white-50 mb-0">End:</label>
+  <input id="endDate" name="end" type="date" class="form-control form-control-sm me-2" required>
+
+  <button type="submit" class="btn btn-sm btn-success">Download Excel</button>
+</form>
+
+    </div>
+  </footer>
