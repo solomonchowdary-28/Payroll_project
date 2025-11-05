@@ -1,4 +1,4 @@
-package com.bsit.web.FileService;
+package com.bsit.web.fileservice;
 
 import java.util.Date;
 import java.util.List;

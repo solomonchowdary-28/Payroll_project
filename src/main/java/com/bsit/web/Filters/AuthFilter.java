@@ -1,22 +1,32 @@
-package com.bsit.web.Filters;
+package com.bsit.web.filters;
 
 
 
-import jakarta.servlet.*;
+import java.io.IOException;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import jakarta.servlet.Filter;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.FilterConfig;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import java.io.IOException;
 
 // Intercepts all requests
 @WebFilter("/*")
 public class AuthFilter implements Filter {
-
+private static final Logger logger =LoggerFactory.getLogger(AuthFilter.class);
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
-
+    	
+    	logger.info("AuthFilter strated");
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse resp = (HttpServletResponse) response;
 
@@ -26,10 +36,10 @@ public class AuthFilter implements Filter {
         // Whitelist: paths that should NOT require login
         boolean isLoginPage = uri.endsWith("/login") || uri.endsWith("/loginsubmit");
         boolean isOtpPage = uri.endsWith("/otp") || uri.endsWith("/otpverify");
-        boolean isStaticResource = uri.contains("/css/") || uri.contains("/js/") || uri.contains("/images/");
+       
 
         // Skip filter for allowed pages
-        if (isLoginPage || isOtpPage || isStaticResource) {
+        if (isLoginPage || isOtpPage ) {
             chain.doFilter(request, response);
             return;
         }
@@ -44,6 +54,8 @@ public class AuthFilter implements Filter {
             // ❌ No valid session, redirect to login
             resp.sendRedirect(req.getContextPath() + "/login");
         }
+        
+        logger.info("auth filter ended");
     }
 
     @Override

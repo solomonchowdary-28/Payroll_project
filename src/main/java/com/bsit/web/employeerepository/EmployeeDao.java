@@ -1,4 +1,4 @@
-package com.bsit.web.EmployeeDao;
+package com.bsit.web.employeerepository;
 
 import com.bsit.web.model.Employee;
 

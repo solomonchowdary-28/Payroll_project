@@ -1,4 +1,7 @@
-package com.bsit.web.Initializer;
+package com.bsit.web.initializer;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.bsit.web.dbutils.DbConnectionmanager;
 
@@ -9,7 +12,7 @@ import jakarta.servlet.annotation.WebListener;
 @WebListener
 
 public class DbIntilizer implements ServletContextListener{
-	
+	private static final Logger logger=LoggerFactory.getLogger(DbIntilizer.class);
 	
 	 private DbConnectionmanager dbManager;
 
@@ -20,12 +23,14 @@ public class DbIntilizer implements ServletContextListener{
 
 	        // store it in context so Servlets can access it
 	        ctx.setAttribute("DBManager", dbManager);
-	        System.out.println("✅ PostgreSQL JDBC initialized successfully.");
+	        logger.info("dbmanager is setted to servletcontext");
+	        logger.info("postgress is successfully intilized");
 	    }
 
 	    @Override
 	    public void contextDestroyed(ServletContextEvent sce) {
-	        System.out.println("🛑 Application stopped. Cleaning up resources...");
+	      
+	        logger.info("Application stopped. Cleaning up resources...");
 	    }
 
 }

@@ -2,6 +2,8 @@ package com.bsit.web.controller;
 
 import java.io.IOException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 import org.thymeleaf.web.servlet.JakartaServletWebApplication;
@@ -18,7 +20,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet("/loginsubmit")
 public class LoginHandling extends HttpServlet{
 	
-	
+	private static final Logger logger=LoggerFactory.getLogger(LoginHandling.class);
 	private TemplateEngine templateEngine;
     private JakartaServletWebApplication application;
     private Loginmanagementservice loginService;
@@ -29,6 +31,8 @@ public class LoginHandling extends HttpServlet{
     protected void doPost(HttpServletRequest request,
                          HttpServletResponse response)
             throws ServletException, IOException {
+    	logger.info("LoginHandling.doPost()");
+    	
     	
     	String email = request.getParameter("email");
         String password = request.getParameter("password");
@@ -60,6 +64,7 @@ public class LoginHandling extends HttpServlet{
 
         response.setContentType("text/html;charset=UTF-8");
         templateEngine.process("otp", context, response.getWriter());
+        logger.info("LoginHandling.doPost() completed");
         return;
        
       

@@ -1,27 +1,25 @@
 package com.bsit.web.loginmanagementservice;
 
-import com.bsit.web.EmployeeDao.EmployeeDao;
-import com.bsit.web.EmployeeDao.EmployeeDaoImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.bsit.web.dbutils.DbConnectionmanager;
+import com.bsit.web.employeerepository.EmployeeDao;
+import com.bsit.web.employeerepository.EmployeeDaoImpl;
 import com.bsit.web.model.Employee;
 
 public class LoginmanagementserviceImpl implements Loginmanagementservice{
-
+private static final Logger logger=LoggerFactory.getLogger(LoginmanagementserviceImpl.class);
 	EmployeeDao dao;
 	
 	@Override
 	public Employee login(String email, String pwd) {
-		System.out.println("LoginmanagementserviceImpl.login()");
+		logger.info("LoginmanagementserviceImpl.login()");
 		DbConnectionmanager manager=new DbConnectionmanager("db.properties");
 		dao=new EmployeeDaoImpl(manager); 
 		Employee emp=dao.findEmployeByEmail(email);
-		System.out.println(emp.getPasswordHash()+"   "+emp.getId());
-		if(emp.getPasswordHash().equals(pwd)) {
-			System.out.println("equals");
+
 		return emp;
-		}
-		else 
-			return null;
 
 }
 }

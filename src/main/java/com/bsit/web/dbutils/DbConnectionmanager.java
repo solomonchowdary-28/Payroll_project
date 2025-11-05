@@ -7,13 +7,19 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
+
 public class DbConnectionmanager {
+	private static final Logger logger=LoggerFactory.getLogger(DbConnectionmanager.class);
 	 private String url;
 	    private String username;
 	    private String password;
 
 	    public DbConnectionmanager(String propertyFile) {
-	    	System.out.println("DbConnectionmanager.DbConnectionmanager()");
+	    	logger.info("DbConnectionmanager.DbConnectionmanager()");
 	        try (InputStream input = getClass().getClassLoader().getResourceAsStream(propertyFile)) {
 	            Properties props = new Properties();
 	            props.load(input);
@@ -25,12 +31,13 @@ public class DbConnectionmanager {
 	            Class.forName("org.postgresql.Driver");
 
 	        } catch (IOException | ClassNotFoundException e) {
+	        	logger.error("failed to load db properties....");
 	            throw new RuntimeException("Failed to load DB properties", e);
 	        }
 	    }
 
 	    public Connection getConnection() throws SQLException {
-	    	System.out.println(username+"   "+password);
+            logger.info("DbConnectionmanager.getConnection()");
 	        return DriverManager.getConnection(url, username, password);
 	    }
 

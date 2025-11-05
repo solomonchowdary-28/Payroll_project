@@ -9,8 +9,11 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Locale;
 
-import com.bsit.web.FileService.FileService;
-import com.bsit.web.FileService.FileServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.bsit.web.fileservice.FileService;
+import com.bsit.web.fileservice.FileServiceImpl;
 import com.bsit.web.model.Payroll;
 import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
@@ -31,26 +34,31 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/downloads/*")
 public class FileDownloads extends HttpServlet{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private static final DateTimeFormatter MONTH_FMT = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     private static final NumberFormat CURRENCY = NumberFormat.getCurrencyInstance(new Locale("en", "IN")); // change locale if needed
-
+    private static final Logger logger=LoggerFactory.getLogger(FileDownloads.class);
 	
-	FileService service=new FileServiceImpl();
+	
 	  protected void doGet(HttpServletRequest request,
               HttpServletResponse response)
  throws ServletException, IOException {
 		  Integer id = (Integer) request.getSession().getAttribute("id");
+		  FileService service=new FileServiceImpl();
 
 		  String d1=request.getParameter("start");
 		  String d2=request.getParameter("end");
 		  //convert string to date
-		  System.out.println(d1);
-		  System.out.println(d2);
+		 logger.debug(d2);
+		 logger.debug(d1);
 		  java.sql.Date startDate = java.sql.Date.valueOf(d1);
 		  java.sql.Date endDate = java.sql.Date.valueOf(d2);
 		 if(request.getPathInfo().equals("/excel")) {
 			 //call service layer
-			 System.out.println("excel download");
+			logger.debug("excel download");
 			 List<Payroll> payrolls=service.downloadPdf(startDate, endDate, id);
 			 if (payrolls == null || payrolls.isEmpty()) {
 		            response.setContentType("text/plain;charset=UTF-8");

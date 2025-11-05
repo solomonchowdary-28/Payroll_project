@@ -1,9 +1,12 @@
-package com.bsit.web.Initializer;
+package com.bsit.web.initializer;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.templateresolver.WebApplicationTemplateResolver;
 import org.thymeleaf.web.IWebApplication;
 import org.thymeleaf.web.servlet.JakartaServletWebApplication;
+
 
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletContextEvent;
@@ -11,10 +14,16 @@ import jakarta.servlet.ServletContextListener;
 import jakarta.servlet.annotation.WebListener;
 @WebListener
 public class ThymeleafInitializer implements ServletContextListener{
+	private static final Logger logger = LoggerFactory.getLogger(ThymeleafInitializer.class);
 	
+
 	@Override
     public void contextInitialized(ServletContextEvent sce) {
+		logger.info("Thymeleaf intilizing started");
         ServletContext context = sce.getServletContext();
+        //test logging
+    
+      
 
         // Wrap ServletContext
         IWebApplication application = JakartaServletWebApplication.buildApplication(context);
@@ -34,7 +43,7 @@ public class ThymeleafInitializer implements ServletContextListener{
         context.setAttribute("templateEngine", engine);
         context.setAttribute("application", application);
 
-        System.out.println("✅ Thymeleaf TemplateEngine initialized once globally");
+       logger.info("Thymeleaf TemplateEngine initialized once globally");
     }
 
 

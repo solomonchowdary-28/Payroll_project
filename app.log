@@ -1,0 +1,1154 @@
+11:57:49.252 INFO  c.b.w.I.ThymeleafInitializer - Thymeleaf intilizing started
+11:57:49.299 INFO  c.b.w.I.ThymeleafInitializer - Thymeleaf TemplateEngine initialized once globally
+13:15:23.583 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+13:15:23.596 INFO  c.bsit.web.Initializer.DbIntilizer - dbmanager is setted to servletcontext
+13:15:23.597 INFO  c.bsit.web.Initializer.DbIntilizer - postgress is successfully intilized
+13:15:23.597 INFO  c.b.w.I.ThymeleafInitializer - Thymeleaf intilizing started
+13:15:23.640 INFO  c.b.w.I.ThymeleafInitializer - Thymeleaf TemplateEngine initialized once globally
+13:15:24.393 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:15:24.394 INFO  com.bsit.web.Filters.AuthFilter - auth filter ended
+13:15:24.429 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:15:24.430 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doGet()
+13:15:25.176 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doget() is completed....
+13:16:16.819 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:16:16.820 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost()
+13:16:16.827 INFO  c.b.w.l.LoginmanagementserviceImpl - LoginmanagementserviceImpl.login()
+13:16:16.827 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+13:16:16.828 INFO  c.b.web.EmployeeDao.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail()
+13:16:16.829 INFO  c.b.web.EmployeeDao.EmployeeDaoImpl - SELECT id, emp_code, name, email, mobile, password_hash, role, bank_account_no, bank_ifsc, created_at, updated_at FROM employee
+ WHERE email = ?
+13:16:16.829 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+13:16:17.310 DEBUG c.b.web.EmployeeDao.EmployeeDaoImpl - resultn fetched from database
+13:16:17.310 DEBUG c.b.web.EmployeeDao.EmployeeDaoImpl - reading resulset obj 
+13:16:17.370 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost() completed
+13:16:52.700 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:16:52.700 INFO  com.bsit.web.controller.OtpVerifier - OtpVerifier.doPost()
+13:16:52.700 INFO  com.bsit.web.controller.OtpVerifier - Otp verified successfully.....
+13:16:52.716 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+13:16:52.717 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:16:52.717 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+13:16:52.717 DEBUG c.b.web.controller.PayrollController - loggedin user id is1
+13:16:52.717 DEBUG c.b.web.controller.PayrollController - /currentmonth
+13:16:52.717 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+13:16:52.721 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+13:16:52.721 INFO  c.bsit.web.payrollDao.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndCurrentMonth()
+13:16:52.722 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+13:16:52.722 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+13:16:52.853 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - 1 2025-11
+13:16:52.864 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:16:52.865 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+13:16:52.865 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+13:16:53.001 INFO  com.bsit.web.Filters.AuthFilter - auth filter ended
+13:16:56.261 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:16:56.262 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+13:16:56.262 DEBUG c.b.web.controller.PayrollController - loggedin user id is1
+13:16:56.262 DEBUG c.b.web.controller.PayrollController - /currentmonth
+13:16:56.262 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+13:16:56.262 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+13:16:56.263 INFO  c.bsit.web.payrollDao.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndCurrentMonth()
+13:16:56.264 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+13:16:56.264 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+13:16:56.380 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - 1 2025-11
+13:16:56.389 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:16:56.390 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+13:16:56.391 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+13:16:56.398 INFO  com.bsit.web.Filters.AuthFilter - auth filter ended
+13:16:57.450 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:16:57.450 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+13:16:57.450 DEBUG c.b.web.controller.PayrollController - loggedin user id is1
+13:16:57.450 DEBUG c.b.web.controller.PayrollController - /previousmonths
+13:16:57.450 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+13:16:57.450 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+13:16:57.451 INFO  c.bsit.web.payrollDao.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+13:16:57.451 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - SELECT * FROM employee_payroll
+WHERE employee_id =?  AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date
+  AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date
+ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+
+13:16:57.451 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+13:16:57.587 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:16:57.588 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:16:57.588 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:16:57.588 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:16:57.588 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:16:57.589 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+13:16:57.589 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+13:16:57.600 INFO  com.bsit.web.Filters.AuthFilter - auth filter ended
+13:16:58.641 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:16:58.642 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+13:16:58.642 DEBUG c.b.web.controller.PayrollController - loggedin user id is1
+13:16:58.642 DEBUG c.b.web.controller.PayrollController - /ytd
+13:16:58.642 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getYtdSummary() strated....
+13:16:58.642 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+13:16:58.642 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+13:16:58.642 INFO  c.bsit.web.payrollDao.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndCurrentMonth()
+13:16:58.642 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+13:16:58.642 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+13:16:58.755 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - 1 2025-11
+13:16:58.765 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:16:58.766 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+13:16:58.766 DEBUG c.b.w.p.PayrollManagementServiceImpl - retrived current month data
+13:16:58.766 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+13:16:58.766 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+13:16:58.766 INFO  c.bsit.web.payrollDao.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+13:16:58.766 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - SELECT * FROM employee_payroll
+WHERE employee_id =?  AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date
+  AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date
+ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+
+13:16:58.766 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+13:16:58.881 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:16:58.882 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:16:58.882 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:16:58.882 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:16:58.883 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:16:58.883 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+13:16:58.883 DEBUG c.b.w.p.PayrollManagementServiceImpl - retrived previous month data
+13:16:58.889 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getYtdSummary() ended....
+13:16:58.922 INFO  com.bsit.web.Filters.AuthFilter - auth filter ended
+13:16:59.752 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:16:59.753 INFO  com.bsit.web.Filters.AuthFilter - auth filter ended
+13:17:06.097 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:17:06.097 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+13:17:06.097 DEBUG c.b.web.controller.PayrollController - loggedin user id is1
+13:17:06.097 DEBUG c.b.web.controller.PayrollController - /previousmonths
+13:17:06.097 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+13:17:06.097 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+13:17:06.098 INFO  c.bsit.web.payrollDao.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+13:17:06.098 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - SELECT * FROM employee_payroll
+WHERE employee_id =?  AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date
+  AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date
+ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+
+13:17:06.098 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+13:17:06.223 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:17:06.224 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:17:06.224 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:17:06.225 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:17:06.225 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:17:06.225 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+13:17:06.225 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+13:17:06.234 INFO  com.bsit.web.Filters.AuthFilter - auth filter ended
+13:17:08.928 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:17:08.928 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+13:17:08.928 DEBUG c.b.web.controller.PayrollController - loggedin user id is1
+13:17:08.928 DEBUG c.b.web.controller.PayrollController - /view
+13:17:08.961 INFO  com.bsit.web.Filters.AuthFilter - auth filter ended
+13:17:11.199 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:17:11.200 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+13:17:11.200 DEBUG c.b.web.controller.PayrollController - loggedin user id is1
+13:17:11.200 DEBUG c.b.web.controller.PayrollController - /currentmonth
+13:17:11.200 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+13:17:11.200 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+13:17:11.203 INFO  c.bsit.web.payrollDao.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndCurrentMonth()
+13:17:11.203 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+13:17:11.203 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+13:17:11.309 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - 1 2025-11
+13:17:11.318 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:17:11.318 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+13:17:11.318 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+13:17:11.322 INFO  com.bsit.web.Filters.AuthFilter - auth filter ended
+13:17:22.774 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:17:22.776 INFO  c.b.web.FileService.FileServiceImpl - FileServiceImpl.downloadPdf()
+13:17:22.776 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+13:17:22.777 INFO  c.bsit.web.payrollDao.PayrollDaoImpl - PayrollDaoImpl.findPayrollByDates()
+13:17:22.777 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - SELECT * FROM public.employee_payroll WHERE TO_DATE(payroll_month, 'YYYY-MM-DD') BETWEEN ? AND ? AND employee_id = ?;
+13:17:22.777 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+13:17:22.893 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:17:22.894 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:17:22.894 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:17:22.894 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:17:22.895 DEBUG c.bsit.web.payrollDao.PayrollDaoImpl - inside while
+13:17:22.895 INFO  c.b.web.FileService.FileServiceImpl - FileServiceImpl.downloadPdf() completed
+13:17:23.251 INFO  com.bsit.web.Filters.AuthFilter - auth filter ended
+13:17:31.851 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:17:31.851 INFO  c.bsit.web.controller.LogoutHandling - LogoutHandling doget()
+13:17:31.852 INFO  c.bsit.web.controller.LogoutHandling - user logged out
+13:17:31.852 INFO  com.bsit.web.Filters.AuthFilter - auth filter ended
+13:17:31.860 INFO  com.bsit.web.Filters.AuthFilter - AuthFilter strated
+13:17:31.860 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doGet()
+13:17:31.862 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doget() is completed....
+14:42:04.553 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:42:04.566 INFO  c.bsit.web.initializer.DbIntilizer - dbmanager is setted to servletcontext
+14:42:04.566 INFO  c.bsit.web.initializer.DbIntilizer - postgress is successfully intilized
+14:42:04.566 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf intilizing started
+14:42:04.567 INFO  c.b.w.i.ThymeleafInitializer - Logger implementation: ch.qos.logback.classic.LoggerContext
+14:42:04.610 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf TemplateEngine initialized once globally
+14:42:05.304 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:42:05.305 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:42:05.345 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:42:05.345 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doGet()
+14:42:06.089 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doget() is completed....
+14:42:11.703 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:42:11.703 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost()
+14:42:11.712 INFO  c.b.w.l.LoginmanagementserviceImpl - LoginmanagementserviceImpl.login()
+14:42:11.712 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:42:11.713 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail()
+14:42:11.714 INFO  c.b.w.e.EmployeeDaoImpl - SELECT id, emp_code, name, email, mobile, password_hash, role, bank_account_no, bank_ifsc, created_at, updated_at FROM employee
+ WHERE email = ?
+14:42:11.714 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:42:12.284 DEBUG c.b.w.e.EmployeeDaoImpl - resultn fetched from database
+14:42:12.284 DEBUG c.b.w.e.EmployeeDaoImpl - reading resulset obj 
+14:42:12.356 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost() completed
+14:42:16.344 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:42:16.345 INFO  com.bsit.web.controller.OtpVerifier - OtpVerifier.doPost()
+14:42:16.345 INFO  com.bsit.web.controller.OtpVerifier - Otp verified successfully.....
+14:42:16.362 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:42:16.363 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:42:16.363 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:42:16.363 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:42:16.363 DEBUG c.b.web.controller.PayrollController - /currentmonth
+14:42:16.363 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+14:42:16.367 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:42:16.369 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndCurrentMonth()
+14:42:16.370 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+14:42:16.370 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:42:16.504 DEBUG c.b.w.p.PayrollDaoImpl - Executing query for employeeId=1 and month=2025-11
+14:42:16.527 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:42:16.529 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+14:42:16.530 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:42:16.766 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:42:19.130 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:42:19.131 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:42:19.131 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:42:19.131 DEBUG c.b.web.controller.PayrollController - /currentmonth
+14:42:19.131 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+14:42:19.131 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:42:19.137 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndCurrentMonth()
+14:42:19.137 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+14:42:19.138 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:42:19.276 DEBUG c.b.w.p.PayrollDaoImpl - Executing query for employeeId=1 and month=2025-11
+14:42:19.280 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:42:19.281 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+14:42:19.282 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:42:19.288 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:42:20.475 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:42:20.476 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:42:20.476 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:42:20.476 DEBUG c.b.web.controller.PayrollController - /previousmonths
+14:42:20.476 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+14:42:20.477 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:42:20.477 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+14:42:20.477 DEBUG c.b.w.p.PayrollDaoImpl - SELECT  id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,"
+			+ "       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,"
+			+ "       credited_account, credited_date, status, created_at FROM employee_payroll
+WHERE employee_id =?  AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date
+  AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date
+ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+
+14:42:20.477 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:42:20.646 ERROR c.b.w.p.PayrollDaoImpl - error
+org.postgresql.util.PSQLException: ERROR: column "
+			+ " does not exist
+  Position: 85
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137)
+	at com.bsit.web.payrollrepository.PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth(PayrollDaoImpl.java:135)
+	at com.bsit.web.payrollmanagementservice.PayrollManagementServiceImpl.getPreviousMonthData(PayrollManagementServiceImpl.java:33)
+	at com.bsit.web.controller.PayrollController.doGet(PayrollController.java:69)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at com.bsit.web.filters.AuthFilter.doFilter(AuthFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:654)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+14:42:20.650 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+14:42:20.650 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:42:20.655 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:44:33.233 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:44:33.233 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:44:33.233 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:44:33.233 DEBUG c.b.web.controller.PayrollController - /previousmonths
+14:44:33.233 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+14:44:33.233 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:44:33.235 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+14:44:33.236 DEBUG c.b.w.p.PayrollDaoImpl - SELECT  id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,"
+			+ "       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,"
+			+ "       credited_account, credited_date, status, created_at FROM employee_payroll
+WHERE employee_id =?  AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date
+  AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date
+ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+
+14:44:33.236 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:44:33.340 ERROR c.b.w.p.PayrollDaoImpl - error
+org.postgresql.util.PSQLException: ERROR: column "
+			+ " does not exist
+  Position: 85
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137)
+	at com.bsit.web.payrollrepository.PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth(PayrollDaoImpl.java:135)
+	at com.bsit.web.payrollmanagementservice.PayrollManagementServiceImpl.getPreviousMonthData(PayrollManagementServiceImpl.java:33)
+	at com.bsit.web.controller.PayrollController.doGet(PayrollController.java:69)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at com.bsit.web.filters.AuthFilter.doFilter(AuthFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:654)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+14:44:33.340 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+14:44:33.340 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:44:33.343 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:44:34.366 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:44:34.366 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:44:34.366 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:44:34.366 DEBUG c.b.web.controller.PayrollController - /previousmonths
+14:44:34.366 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+14:44:34.366 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:44:34.366 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+14:44:34.366 DEBUG c.b.w.p.PayrollDaoImpl - SELECT  id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,"
+			+ "       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,"
+			+ "       credited_account, credited_date, status, created_at FROM employee_payroll
+WHERE employee_id =?  AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date
+  AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date
+ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+
+14:44:34.366 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:44:34.474 ERROR c.b.w.p.PayrollDaoImpl - error
+org.postgresql.util.PSQLException: ERROR: column "
+			+ " does not exist
+  Position: 85
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137)
+	at com.bsit.web.payrollrepository.PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth(PayrollDaoImpl.java:135)
+	at com.bsit.web.payrollmanagementservice.PayrollManagementServiceImpl.getPreviousMonthData(PayrollManagementServiceImpl.java:33)
+	at com.bsit.web.controller.PayrollController.doGet(PayrollController.java:69)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at com.bsit.web.filters.AuthFilter.doFilter(AuthFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:654)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+14:44:34.475 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+14:44:34.475 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:44:34.478 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:44:35.222 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:44:35.222 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:44:35.222 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:44:35.222 DEBUG c.b.web.controller.PayrollController - /previousmonths
+14:44:35.223 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+14:44:35.223 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:44:35.223 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+14:44:35.223 DEBUG c.b.w.p.PayrollDaoImpl - SELECT  id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,"
+			+ "       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,"
+			+ "       credited_account, credited_date, status, created_at FROM employee_payroll
+WHERE employee_id =?  AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date
+  AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date
+ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+
+14:44:35.223 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:44:35.326 ERROR c.b.w.p.PayrollDaoImpl - error
+org.postgresql.util.PSQLException: ERROR: column "
+			+ " does not exist
+  Position: 85
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137)
+	at com.bsit.web.payrollrepository.PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth(PayrollDaoImpl.java:135)
+	at com.bsit.web.payrollmanagementservice.PayrollManagementServiceImpl.getPreviousMonthData(PayrollManagementServiceImpl.java:33)
+	at com.bsit.web.controller.PayrollController.doGet(PayrollController.java:69)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at com.bsit.web.filters.AuthFilter.doFilter(AuthFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:654)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+14:44:35.327 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+14:44:35.327 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:44:35.330 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:44:36.599 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:44:36.599 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:44:36.599 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:44:36.599 DEBUG c.b.web.controller.PayrollController - /previousmonths
+14:44:36.600 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+14:44:36.600 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:44:36.601 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+14:44:36.602 DEBUG c.b.w.p.PayrollDaoImpl - SELECT  id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,"
+			+ "       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,"
+			+ "       credited_account, credited_date, status, created_at FROM employee_payroll
+WHERE employee_id =?  AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date
+  AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date
+ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+
+14:44:36.602 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:44:36.715 ERROR c.b.w.p.PayrollDaoImpl - error
+org.postgresql.util.PSQLException: ERROR: column "
+			+ " does not exist
+  Position: 85
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137)
+	at com.bsit.web.payrollrepository.PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth(PayrollDaoImpl.java:135)
+	at com.bsit.web.payrollmanagementservice.PayrollManagementServiceImpl.getPreviousMonthData(PayrollManagementServiceImpl.java:33)
+	at com.bsit.web.controller.PayrollController.doGet(PayrollController.java:69)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at com.bsit.web.filters.AuthFilter.doFilter(AuthFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:654)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+14:44:36.716 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+14:44:36.716 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:44:36.720 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:44:38.737 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:44:38.746 INFO  c.bsit.web.initializer.DbIntilizer - dbmanager is setted to servletcontext
+14:44:38.746 INFO  c.bsit.web.initializer.DbIntilizer - postgress is successfully intilized
+14:44:38.747 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf intilizing started
+14:44:38.747 INFO  c.b.w.i.ThymeleafInitializer - Logger implementation: ch.qos.logback.classic.LoggerContext
+14:44:38.791 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf TemplateEngine initialized once globally
+14:44:38.898 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:44:38.898 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:44:38.899 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:44:38.906 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:44:38.906 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doGet()
+14:44:39.485 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doget() is completed....
+14:44:43.286 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:44:43.286 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost()
+14:44:43.293 INFO  c.b.w.l.LoginmanagementserviceImpl - LoginmanagementserviceImpl.login()
+14:44:43.293 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:44:43.293 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail()
+14:44:43.293 INFO  c.b.w.e.EmployeeDaoImpl - SELECT id, emp_code, name, email, mobile, password_hash, role, bank_account_no, bank_ifsc, created_at, updated_at FROM employee
+ WHERE email = ?
+14:44:43.293 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:44:43.607 DEBUG c.b.w.e.EmployeeDaoImpl - resultn fetched from database
+14:44:43.607 DEBUG c.b.w.e.EmployeeDaoImpl - reading resulset obj 
+14:44:43.653 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost() completed
+14:44:46.825 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:44:46.826 INFO  com.bsit.web.controller.OtpVerifier - OtpVerifier.doPost()
+14:44:46.827 INFO  com.bsit.web.controller.OtpVerifier - Otp verified successfully.....
+14:44:46.838 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:44:46.838 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:44:46.838 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:44:46.839 DEBUG c.b.web.controller.PayrollController - /currentmonth
+14:44:46.839 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+14:44:46.843 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:44:46.845 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndCurrentMonth()
+14:44:46.845 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+14:44:46.845 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:44:46.965 DEBUG c.b.w.p.PayrollDaoImpl - Executing query for employeeId=1 and month=2025-11
+14:44:46.973 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:44:46.975 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+14:44:46.975 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:44:47.087 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:44:48.362 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:44:48.362 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:44:48.362 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:44:48.362 DEBUG c.b.web.controller.PayrollController - /previousmonths
+14:44:48.363 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+14:44:48.363 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:44:48.363 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+14:44:48.363 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax, lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay, credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+14:44:48.363 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:44:48.508 ERROR c.b.w.p.PayrollDaoImpl - error
+org.postgresql.util.PSQLException: Operation requires a scrollable ResultSet, but this ResultSet is FORWARD_ONLY.
+	at org.postgresql.jdbc.PgResultSet.checkScrollable(PgResultSet.java:324)
+	at org.postgresql.jdbc.PgResultSet.beforeFirst(PgResultSet.java:387)
+	at com.bsit.web.payrollrepository.PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth(PayrollDaoImpl.java:136)
+	at com.bsit.web.payrollmanagementservice.PayrollManagementServiceImpl.getPreviousMonthData(PayrollManagementServiceImpl.java:33)
+	at com.bsit.web.controller.PayrollController.doGet(PayrollController.java:69)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at com.bsit.web.filters.AuthFilter.doFilter(AuthFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:654)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+14:44:48.512 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+14:44:48.512 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:44:48.515 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:47:45.558 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:47:45.569 INFO  c.bsit.web.initializer.DbIntilizer - dbmanager is setted to servletcontext
+14:47:45.569 INFO  c.bsit.web.initializer.DbIntilizer - postgress is successfully intilized
+14:47:45.569 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf intilizing started
+14:47:45.569 INFO  c.b.w.i.ThymeleafInitializer - Logger implementation: ch.qos.logback.classic.LoggerContext
+14:47:45.611 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf TemplateEngine initialized once globally
+14:48:20.991 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:48:20.991 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:48:20.992 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:48:20.999 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:48:21.000 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doGet()
+14:48:21.572 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doget() is completed....
+14:48:31.085 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:48:31.085 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost()
+14:48:31.091 INFO  c.b.w.l.LoginmanagementserviceImpl - LoginmanagementserviceImpl.login()
+14:48:31.091 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:48:31.091 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail()
+14:48:31.091 INFO  c.b.w.e.EmployeeDaoImpl - SELECT id, emp_code, name, email, mobile, password_hash, role, bank_account_no, bank_ifsc, created_at, updated_at FROM employee
+ WHERE email = ?
+14:48:31.091 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:48:31.437 DEBUG c.b.w.e.EmployeeDaoImpl - resultn fetched from database
+14:48:31.438 DEBUG c.b.w.e.EmployeeDaoImpl - reading resulset obj 
+14:48:31.486 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost() completed
+14:48:34.741 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:48:34.741 INFO  com.bsit.web.controller.OtpVerifier - OtpVerifier.doPost()
+14:48:34.742 INFO  com.bsit.web.controller.OtpVerifier - Otp verified successfully.....
+14:48:34.748 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:48:34.748 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:48:34.749 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:48:34.749 DEBUG c.b.web.controller.PayrollController - /currentmonth
+14:48:34.749 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+14:48:34.754 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:48:34.755 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndCurrentMonth()
+14:48:34.756 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+14:48:34.756 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:48:34.876 DEBUG c.b.w.p.PayrollDaoImpl - Executing query for employeeId=1 and month=2025-11
+14:48:34.886 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:48:34.888 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+14:48:34.889 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:48:34.989 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:48:36.689 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:48:36.689 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:48:36.689 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:48:36.689 DEBUG c.b.web.controller.PayrollController - /previousmonths
+14:48:36.690 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+14:48:36.690 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:48:36.691 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+14:48:36.691 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax, lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay, credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+14:48:36.691 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:48:36.811 ERROR c.b.w.p.PayrollDaoImpl - error
+org.postgresql.util.PSQLException: No value specified for parameter 2.
+	at org.postgresql.core.v3.SimpleParameterList.checkAllParametersSet(SimpleParameterList.java:380)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137)
+	at com.bsit.web.payrollrepository.PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth(PayrollDaoImpl.java:133)
+	at com.bsit.web.payrollmanagementservice.PayrollManagementServiceImpl.getPreviousMonthData(PayrollManagementServiceImpl.java:33)
+	at com.bsit.web.controller.PayrollController.doGet(PayrollController.java:69)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at com.bsit.web.filters.AuthFilter.doFilter(AuthFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:654)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+14:48:36.814 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+14:48:36.815 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:48:36.818 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:50:15.999 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:50:15.999 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:50:16.000 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:50:16.000 DEBUG c.b.web.controller.PayrollController - /previousmonths
+14:50:16.000 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+14:50:16.001 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:50:16.002 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+14:50:16.002 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax, lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay, credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+14:50:16.002 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:50:16.117 ERROR c.b.w.p.PayrollDaoImpl - error
+org.postgresql.util.PSQLException: No value specified for parameter 2.
+	at org.postgresql.core.v3.SimpleParameterList.checkAllParametersSet(SimpleParameterList.java:380)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137)
+	at com.bsit.web.payrollrepository.PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth(PayrollDaoImpl.java:133)
+	at com.bsit.web.payrollmanagementservice.PayrollManagementServiceImpl.getPreviousMonthData(PayrollManagementServiceImpl.java:33)
+	at com.bsit.web.controller.PayrollController.doGet(PayrollController.java:69)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at com.bsit.web.filters.AuthFilter.doFilter(AuthFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:654)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+14:50:16.117 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+14:50:16.118 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:50:16.122 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:50:18.112 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:50:18.122 INFO  c.bsit.web.initializer.DbIntilizer - dbmanager is setted to servletcontext
+14:50:18.122 INFO  c.bsit.web.initializer.DbIntilizer - postgress is successfully intilized
+14:50:18.122 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf intilizing started
+14:50:18.123 INFO  c.b.w.i.ThymeleafInitializer - Logger implementation: ch.qos.logback.classic.LoggerContext
+14:50:18.165 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf TemplateEngine initialized once globally
+14:50:18.297 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:50:18.298 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:50:18.298 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:50:18.307 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:50:18.307 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doGet()
+14:50:18.901 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doget() is completed....
+14:50:22.930 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:50:22.930 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost()
+14:50:22.935 INFO  c.b.w.l.LoginmanagementserviceImpl - LoginmanagementserviceImpl.login()
+14:50:22.935 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:50:22.936 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail()
+14:50:22.936 INFO  c.b.w.e.EmployeeDaoImpl - SELECT id, emp_code, name, email, mobile, password_hash, role, bank_account_no, bank_ifsc, created_at, updated_at FROM employee
+ WHERE email = ?
+14:50:22.936 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:50:23.273 DEBUG c.b.w.e.EmployeeDaoImpl - resultn fetched from database
+14:50:23.273 DEBUG c.b.w.e.EmployeeDaoImpl - reading resulset obj 
+14:50:23.324 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost() completed
+14:50:26.326 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:50:26.326 INFO  com.bsit.web.controller.OtpVerifier - OtpVerifier.doPost()
+14:50:26.326 INFO  com.bsit.web.controller.OtpVerifier - Otp verified successfully.....
+14:50:26.335 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:50:26.335 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:50:26.336 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:50:26.336 DEBUG c.b.web.controller.PayrollController - /currentmonth
+14:50:26.336 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+14:50:26.339 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:50:26.341 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndCurrentMonth()
+14:50:26.341 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+14:50:26.341 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:50:26.451 DEBUG c.b.w.p.PayrollDaoImpl - Executing query for employeeId=1 and month=2025-11
+14:50:26.459 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:26.460 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+14:50:26.461 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:50:26.555 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:50:29.738 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:50:29.739 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:50:29.739 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:50:29.739 DEBUG c.b.web.controller.PayrollController - /previousmonths
+14:50:29.739 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+14:50:29.739 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:50:29.739 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+14:50:29.739 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax, lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay, credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+14:50:29.739 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:50:29.871 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:29.871 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:29.871 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:29.872 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:29.872 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:29.872 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:29.872 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+14:50:29.872 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:50:29.882 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:50:37.341 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:50:37.341 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:50:37.341 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:50:37.341 DEBUG c.b.web.controller.PayrollController - /ytd
+14:50:37.341 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getYtdSummary() strated....
+14:50:37.341 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+14:50:37.342 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:50:37.345 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndCurrentMonth()
+14:50:37.345 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+14:50:37.345 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:50:37.455 DEBUG c.b.w.p.PayrollDaoImpl - Executing query for employeeId=1 and month=2025-11
+14:50:37.458 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:37.459 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+14:50:37.459 DEBUG c.b.w.p.PayrollManagementServiceImpl - retrived current month data
+14:50:37.459 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+14:50:37.459 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:50:37.459 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+14:50:37.459 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax, lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay, credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+14:50:37.459 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:50:37.575 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:37.575 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:37.575 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:37.575 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:37.576 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:37.576 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:37.576 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+14:50:37.576 DEBUG c.b.w.p.PayrollManagementServiceImpl - retrived previous month data
+14:50:37.583 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getYtdSummary() ended....
+14:50:37.627 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:50:39.793 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:50:39.793 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+14:50:39.793 DEBUG c.b.web.controller.PayrollController - loggedin user id is {}1
+14:50:39.793 DEBUG c.b.web.controller.PayrollController - /currentmonth
+14:50:39.793 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+14:50:39.793 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+14:50:39.793 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndCurrentMonth()
+14:50:39.793 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+14:50:39.793 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+14:50:39.895 DEBUG c.b.w.p.PayrollDaoImpl - Executing query for employeeId=1 and month=2025-11
+14:50:39.898 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+14:50:39.899 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+14:50:39.899 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+14:50:39.904 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:50:46.284 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:50:46.284 INFO  c.bsit.web.controller.LogoutHandling - LogoutHandling doget()
+14:50:46.284 INFO  c.bsit.web.controller.LogoutHandling - user logged out
+14:50:46.285 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+14:50:46.291 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+14:50:46.291 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doGet()
+14:50:46.293 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doget() is completed....
+15:23:00.239 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:23:00.254 INFO  c.bsit.web.initializer.DbIntilizer - dbmanager is setted to servletcontext
+15:23:00.254 INFO  c.bsit.web.initializer.DbIntilizer - postgress is successfully intilized
+15:23:00.254 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf intilizing started
+15:23:15.409 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:23:15.423 INFO  c.bsit.web.initializer.DbIntilizer - dbmanager is setted to servletcontext
+15:23:15.423 INFO  c.bsit.web.initializer.DbIntilizer - postgress is successfully intilized
+15:23:15.423 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf intilizing started
+15:23:15.471 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf TemplateEngine initialized once globally
+15:23:16.333 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:23:16.334 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+15:23:16.383 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:23:16.384 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doGet()
+15:23:17.085 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doget() is completed....
+15:52:44.421 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:52:44.433 INFO  c.bsit.web.initializer.DbIntilizer - dbmanager is setted to servletcontext
+15:52:44.434 INFO  c.bsit.web.initializer.DbIntilizer - postgress is successfully intilized
+15:52:44.434 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf intilizing started
+15:52:44.476 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf TemplateEngine initialized once globally
+15:52:45.209 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:52:45.210 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+15:52:45.224 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:52:45.231 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doGet()
+15:52:46.000 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doget() is completed....
+15:52:50.722 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:52:50.722 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost()
+15:52:50.729 INFO  c.b.w.l.LoginmanagementserviceImpl - LoginmanagementserviceImpl.login()
+15:52:50.729 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:52:50.731 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail()
+15:52:50.731 DEBUG c.b.w.e.EmployeeDaoImpl - Query: SELECT id, emp_code, name, email, mobile, password_hash, role, bank_account_no, bank_ifsc, created_at, updated_at FROM employee
+ WHERE email = ?
+15:52:50.738 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:52:51.212 DEBUG c.b.w.e.EmployeeDaoImpl - Result fetched from database for email=solmon@gmail.com
+15:52:51.212 DEBUG c.b.w.e.EmployeeDaoImpl - Reading resultset row for email=solmon@gmail.com
+15:52:51.223 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail() completed.
+15:52:51.289 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost() completed
+15:52:55.260 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:52:55.260 INFO  com.bsit.web.controller.OtpVerifier - OtpVerifier.doPost()
+15:52:55.261 INFO  com.bsit.web.controller.OtpVerifier - Otp verified successfully.....
+15:52:55.277 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:52:55.277 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:52:55.278 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+15:52:55.278 DEBUG c.b.web.controller.PayrollController - loggedin user id is 1
+15:52:55.278 DEBUG c.b.web.controller.PayrollController - /currentmonth
+15:52:55.278 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+15:52:55.281 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:52:55.281 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.FIND_PAYROLL_BY_EMPLOYEE_ID_AND_CURRENT_MONTH()
+15:52:55.281 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+15:52:55.281 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:52:55.400 DEBUG c.b.w.p.PayrollDaoImpl - Executing query for employeeId=1 and month=2025-11
+15:52:55.412 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:52:55.413 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+15:52:55.413 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+15:52:55.553 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+15:52:57.140 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:52:57.141 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+15:52:57.141 DEBUG c.b.web.controller.PayrollController - loggedin user id is 1
+15:52:57.141 DEBUG c.b.web.controller.PayrollController - /previousmonths
+15:52:57.141 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+15:52:57.141 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:52:57.142 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+15:52:57.143 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax, lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay, credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+15:52:57.143 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:52:57.281 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:52:57.281 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:52:57.281 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:52:57.282 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:52:57.282 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:52:57.282 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:52:57.283 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+15:52:57.283 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+15:52:57.298 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+15:52:58.442 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:52:58.442 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+15:52:58.442 DEBUG c.b.web.controller.PayrollController - loggedin user id is 1
+15:52:58.442 DEBUG c.b.web.controller.PayrollController - /ytd
+15:52:58.442 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getYtdSummary() strated....
+15:52:58.443 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+15:52:58.443 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:52:58.443 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.FIND_PAYROLL_BY_EMPLOYEE_ID_AND_CURRENT_MONTH()
+15:52:58.443 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+15:52:58.443 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:52:58.556 DEBUG c.b.w.p.PayrollDaoImpl - Executing query for employeeId=1 and month=2025-11
+15:52:58.561 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:52:58.562 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+15:52:58.562 DEBUG c.b.w.p.PayrollManagementServiceImpl - retrived current month data
+15:52:58.562 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+15:52:58.562 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:52:58.562 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+15:52:58.562 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax, lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay, credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+15:52:58.562 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:52:58.676 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:52:58.676 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:52:58.677 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:52:58.677 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:52:58.677 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:52:58.677 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:52:58.678 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+15:52:58.678 DEBUG c.b.w.p.PayrollManagementServiceImpl - retrived previous month data
+15:52:58.684 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getYtdSummary() ended....
+15:52:58.726 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+15:53:00.842 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:53:00.843 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+15:53:00.843 DEBUG c.b.web.controller.PayrollController - loggedin user id is 1
+15:53:00.843 DEBUG c.b.web.controller.PayrollController - /currentmonth
+15:53:00.843 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+15:53:00.843 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:53:00.843 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.FIND_PAYROLL_BY_EMPLOYEE_ID_AND_CURRENT_MONTH()
+15:53:00.843 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+15:53:00.843 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:53:00.944 DEBUG c.b.w.p.PayrollDaoImpl - Executing query for employeeId=1 and month=2025-11
+15:53:00.949 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:53:00.950 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+15:53:00.950 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+15:53:00.954 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+15:53:09.645 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:53:09.655 DEBUG c.bsit.web.controller.FileDownloads - 2025-11-05
+15:53:09.656 DEBUG c.bsit.web.controller.FileDownloads - 2025-01-05
+15:53:09.656 DEBUG c.bsit.web.controller.FileDownloads - excel download
+15:53:09.656 INFO  c.b.web.fileservice.FileServiceImpl - FileServiceImpl.downloadPdf()
+15:53:09.656 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:53:09.657 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByDates()
+15:53:09.657 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax, lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay, credited_account, credited_date, status, created_at FROM public.employee_payroll WHERE TO_DATE(payroll_month, 'YYYY-MM-DD') BETWEEN ? AND ? AND employee_id = ?;
+15:53:09.657 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:53:09.768 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:53:09.769 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:53:09.770 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:53:09.770 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:53:09.770 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:53:09.770 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:53:09.772 INFO  c.b.web.fileservice.FileServiceImpl - FileServiceImpl.downloadPdf() completed
+15:53:10.078 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+15:53:14.077 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:53:14.077 INFO  c.bsit.web.controller.LogoutHandling - LogoutHandling doget()
+15:53:14.077 INFO  c.bsit.web.controller.LogoutHandling - user logged out
+15:53:14.077 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+15:53:14.087 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:53:14.087 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doGet()
+15:53:14.089 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doget() is completed....
+15:53:20.715 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:53:20.715 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost()
+15:53:20.716 INFO  c.b.w.l.LoginmanagementserviceImpl - LoginmanagementserviceImpl.login()
+15:53:20.716 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:53:20.716 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail()
+15:53:20.716 DEBUG c.b.w.e.EmployeeDaoImpl - Query: SELECT id, emp_code, name, email, mobile, password_hash, role, bank_account_no, bank_ifsc, created_at, updated_at FROM employee
+ WHERE email = ?
+15:53:20.716 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:53:20.824 DEBUG c.b.w.e.EmployeeDaoImpl - Result fetched from database for email=1111
+15:53:20.824 DEBUG c.b.w.e.EmployeeDaoImpl - No employee found for email=1111
+15:53:20.824 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail() completed.
+15:54:47.228 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:54:47.238 INFO  c.bsit.web.initializer.DbIntilizer - dbmanager is setted to servletcontext
+15:54:47.238 INFO  c.bsit.web.initializer.DbIntilizer - postgress is successfully intilized
+15:54:47.239 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf intilizing started
+15:54:47.278 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf TemplateEngine initialized once globally
+15:57:56.073 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:57:56.073 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doGet()
+15:57:56.687 INFO  c.bsit.web.controller.LoginServlet - LoginServlet.doget() is completed....
+15:58:00.710 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:58:00.711 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost()
+15:58:00.715 INFO  c.b.w.l.LoginmanagementserviceImpl - LoginmanagementserviceImpl.login()
+15:58:00.715 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:58:00.716 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail()
+15:58:00.717 DEBUG c.b.w.e.EmployeeDaoImpl - Query: SELECT id, emp_code, name, email, mobile, password_hash, role, bank_account_no, bank_ifsc, created_at, updated_at FROM employee
+ WHERE email = ?
+15:58:00.732 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:58:01.048 DEBUG c.b.w.e.EmployeeDaoImpl - Result fetched from database for email=111
+15:58:01.048 DEBUG c.b.w.e.EmployeeDaoImpl - No employee found for email=111
+15:58:01.049 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail() completed.
+15:59:03.756 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:59:03.764 INFO  c.bsit.web.initializer.DbIntilizer - dbmanager is setted to servletcontext
+15:59:03.765 INFO  c.bsit.web.initializer.DbIntilizer - postgress is successfully intilized
+15:59:03.765 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf intilizing started
+15:59:03.803 INFO  c.b.w.i.ThymeleafInitializer - Thymeleaf TemplateEngine initialized once globally
+15:59:09.304 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:59:09.304 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost()
+15:59:09.309 INFO  c.b.w.l.LoginmanagementserviceImpl - LoginmanagementserviceImpl.login()
+15:59:09.309 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:59:09.310 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail()
+15:59:09.311 DEBUG c.b.w.e.EmployeeDaoImpl - Query: SELECT id, emp_code, name, email, mobile, password_hash, role, bank_account_no, bank_ifsc, created_at, updated_at FROM employee
+ WHERE email = ?
+15:59:09.326 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:59:09.654 DEBUG c.b.w.e.EmployeeDaoImpl - Result fetched from database for email=111
+15:59:09.654 DEBUG c.b.w.e.EmployeeDaoImpl - No employee found for email=111
+15:59:09.655 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail() completed.
+15:59:15.589 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:59:15.590 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost()
+15:59:15.590 INFO  c.b.w.l.LoginmanagementserviceImpl - LoginmanagementserviceImpl.login()
+15:59:15.590 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:59:15.590 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail()
+15:59:15.590 DEBUG c.b.w.e.EmployeeDaoImpl - Query: SELECT id, emp_code, name, email, mobile, password_hash, role, bank_account_no, bank_ifsc, created_at, updated_at FROM employee
+ WHERE email = ?
+15:59:15.590 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:59:15.697 DEBUG c.b.w.e.EmployeeDaoImpl - Result fetched from database for email=111
+15:59:15.697 DEBUG c.b.w.e.EmployeeDaoImpl - No employee found for email=111
+15:59:15.698 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail() completed.
+15:59:23.662 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:59:23.662 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost()
+15:59:23.662 INFO  c.b.w.l.LoginmanagementserviceImpl - LoginmanagementserviceImpl.login()
+15:59:23.662 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:59:23.663 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail()
+15:59:23.664 DEBUG c.b.w.e.EmployeeDaoImpl - Query: SELECT id, emp_code, name, email, mobile, password_hash, role, bank_account_no, bank_ifsc, created_at, updated_at FROM employee
+ WHERE email = ?
+15:59:23.664 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:59:23.781 DEBUG c.b.w.e.EmployeeDaoImpl - Result fetched from database for email=solmon@gmail.com
+15:59:23.781 DEBUG c.b.w.e.EmployeeDaoImpl - Reading resultset row for email=solmon@gmail.com
+15:59:23.789 INFO  c.b.w.e.EmployeeDaoImpl - EmployeeDaoImpl.findEmployeByEmail() completed.
+15:59:23.830 INFO  c.bsit.web.controller.LoginHandling - LoginHandling.doPost() completed
+15:59:27.642 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:59:27.642 INFO  com.bsit.web.controller.OtpVerifier - OtpVerifier.doPost()
+15:59:27.642 INFO  com.bsit.web.controller.OtpVerifier - Otp verified successfully.....
+15:59:27.655 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:59:27.655 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:59:27.656 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+15:59:27.656 DEBUG c.b.web.controller.PayrollController - loggedin user id is 1
+15:59:27.656 DEBUG c.b.web.controller.PayrollController - /currentmonth
+15:59:27.656 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+15:59:27.661 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:59:27.661 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.FIND_PAYROLL_BY_EMPLOYEE_ID_AND_CURRENT_MONTH()
+15:59:27.661 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+15:59:27.661 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:59:27.785 DEBUG c.b.w.p.PayrollDaoImpl - Executing query for employeeId=1 and month=2025-11
+15:59:27.790 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:27.791 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+15:59:27.791 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+15:59:27.914 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+15:59:29.486 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:59:29.486 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+15:59:29.486 DEBUG c.b.web.controller.PayrollController - loggedin user id is 1
+15:59:29.487 DEBUG c.b.web.controller.PayrollController - /currentmonth
+15:59:29.487 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+15:59:29.487 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:59:29.488 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.FIND_PAYROLL_BY_EMPLOYEE_ID_AND_CURRENT_MONTH()
+15:59:29.488 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+15:59:29.488 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:59:29.596 DEBUG c.b.w.p.PayrollDaoImpl - Executing query for employeeId=1 and month=2025-11
+15:59:29.603 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:29.604 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+15:59:29.604 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+15:59:29.607 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+15:59:30.521 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:59:30.521 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+15:59:30.521 DEBUG c.b.web.controller.PayrollController - loggedin user id is 1
+15:59:30.521 DEBUG c.b.web.controller.PayrollController - /previousmonths
+15:59:30.521 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+15:59:30.521 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:59:30.521 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+15:59:30.521 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax, lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay, credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+15:59:30.521 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:59:30.637 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:30.637 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:30.637 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:30.637 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:30.637 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:30.637 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:30.637 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+15:59:30.637 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+15:59:30.646 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+15:59:31.618 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:59:31.618 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+15:59:31.618 DEBUG c.b.web.controller.PayrollController - loggedin user id is 1
+15:59:31.618 DEBUG c.b.web.controller.PayrollController - /ytd
+15:59:31.618 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getYtdSummary() strated....
+15:59:31.618 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+15:59:31.618 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:59:31.618 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.FIND_PAYROLL_BY_EMPLOYEE_ID_AND_CURRENT_MONTH()
+15:59:31.618 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+15:59:31.618 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:59:31.738 DEBUG c.b.w.p.PayrollDaoImpl - Executing query for employeeId=1 and month=2025-11
+15:59:31.743 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:31.743 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+15:59:31.743 DEBUG c.b.w.p.PayrollManagementServiceImpl - retrived current month data
+15:59:31.744 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData() strated....
+15:59:31.744 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:59:31.744 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.findPayrollByEmployeeIdAndPreviousMonth()
+15:59:31.744 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax, lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay, credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND to_date(payroll_month, 'YYYY-MM-DD') >= date_trunc('year', current_date)::date AND to_date(payroll_month, 'YYYY-MM-DD') < date_trunc('month', current_date)::date ORDER BY to_date(payroll_month, 'YYYY-MM-DD');
+15:59:31.744 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:59:31.878 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:31.879 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:31.879 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:31.879 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:31.879 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:31.879 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:31.880 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getPreviousMonthData( ended....)
+15:59:31.880 DEBUG c.b.w.p.PayrollManagementServiceImpl - retrived previous month data
+15:59:31.887 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getYtdSummary() ended....
+15:59:31.912 INFO  com.bsit.web.filters.AuthFilter - auth filter ended
+15:59:34.305 INFO  com.bsit.web.filters.AuthFilter - AuthFilter strated
+15:59:34.305 INFO  c.b.web.controller.PayrollController - PayrollController.doGet()
+15:59:34.305 DEBUG c.b.web.controller.PayrollController - loggedin user id is 1
+15:59:34.306 DEBUG c.b.web.controller.PayrollController - /currentmonth
+15:59:34.306 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() started...
+15:59:34.306 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.DbConnectionmanager()
+15:59:34.306 INFO  c.b.w.p.PayrollDaoImpl - PayrollDaoImpl.FIND_PAYROLL_BY_EMPLOYEE_ID_AND_CURRENT_MONTH()
+15:59:34.306 DEBUG c.b.w.p.PayrollDaoImpl - SELECT id, employee_id, payroll_month, basic_pay, hra, allowances, deductions, tax,       lop_days, overtime_hours, overtime_amount, bonus_amount, net_pay,       credited_account, credited_date, status, created_at FROM employee_payroll WHERE employee_id = ? AND payroll_month = ?;
+15:59:34.306 INFO  c.b.web.dbutils.DbConnectionmanager - DbConnectionmanager.getConnection()
+15:59:34.412 DEBUG c.b.w.p.PayrollDaoImpl - Executing query for employeeId=1 and month=2025-11
+15:59:34.417 DEBUG c.b.w.p.PayrollDaoImpl - inside while
+15:59:34.418 INFO  c.b.w.p.PayrollManagementServiceImpl - PayrollManagementServiceImpl.getCurrentMonthData() ended
+15:59:34.418 INFO  c.b.web.controller.PayrollController - PayrollController.renderdashboard()
+15:59:34.422 INFO  com.bsit.web.filters.AuthFilter - auth filter ended

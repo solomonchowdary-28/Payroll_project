@@ -2,6 +2,8 @@ package com.bsit.web.controller;
 
 import java.io.IOException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 import org.thymeleaf.web.servlet.JakartaServletWebApplication;
@@ -15,25 +17,21 @@ import jakarta.servlet.http.HttpServletResponse;
 public class OtpVerifier extends HttpServlet {
 	private TemplateEngine templateEngine;
     private JakartaServletWebApplication application;
-	
-	  protected void doPost(HttpServletRequest request,
-              HttpServletResponse response)
- throws ServletException, IOException {
-		  
-		String otp=  (Integer) request.getSession().getAttribute("otp")+"";
+	private static final Logger logger=LoggerFactory.getLogger(OtpVerifier.class);
+	@Override
+	  protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
+		  logger.info("OtpVerifier.doPost()");
+		  String otp=  (Integer) request.getSession().getAttribute("otp")+"";
 		  String enteredOtp=request.getParameter("otp");
-		  System.out.println(otp+" session otp");
-		  System.out.println(enteredOtp+" user otp");
-		  
+		 
 		if(otp.equals(enteredOtp)) {
 			
-	        
+			 logger.info("Otp verified successfully.....");
 			  response.sendRedirect(request.getContextPath() + "/payroll/currentmonth");
-			 
-	        
 		}
 		else
 		{
+			logger.info("otp verification failed.... ");
 			templateEngine = (TemplateEngine) getServletContext().getAttribute("templateEngine");
 	    	 
 	    	 application=(JakartaServletWebApplication)getServletContext().getAttribute("application");
@@ -45,6 +43,7 @@ public class OtpVerifier extends HttpServlet {
 	        context.setVariable("error", "invalid otp");
 	        response.setContentType("text/html;charset=UTF-8");
 	        templateEngine.process("otp", context, response.getWriter());
+	        
 		}
 		}
 
