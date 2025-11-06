@@ -38,6 +38,8 @@ public class LoginServlet extends HttpServlet{
 	    		response.setContentType("text/html;charset=UTF-8");
 	    		templateEngine.process("login", context, response.getWriter());
 	    		logger.info("LoginServlet.doget() is completed....");
+	    		StringBuffer sb=new StringBuffer();
+	    		
     }
 
 }
