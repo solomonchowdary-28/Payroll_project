@@ -5,6 +5,7 @@ public class TestServlet {
 	
 	public void test() {
 		System.out.println("testing git");
+		System.out.println("testing git 2");
 	}
 
 }
